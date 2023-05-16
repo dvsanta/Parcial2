@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { ListaComponent } from './lista/lista.component';
-import { IndividualComponent } from './individual/individual.component';
+import { CafeDetailComponent } from './cafe/cafe-detail/cafe-detail.component';
 
 const routes: Routes = [
-  { path: '', component: ListaComponent },
-  { path: 'individual', component: IndividualComponent }
+  // Otras rutas existentes...
+  { path: 'cafe/:id', component: CafeDetailComponent },
 ];
 
 @NgModule({
